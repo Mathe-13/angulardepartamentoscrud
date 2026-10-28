@@ -8,11 +8,12 @@ import { FormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
 import { ServiceDepartamentos } from './services/service.departamentos';
 import { CreateComponent } from './components/create-component/create-component';
+import { DetailsComponent } from './components/details-component/details-component';
 
 @NgModule({
-  declarations: [App, HomeComponent, MenuComponent, CreateComponent],
+  declarations: [App, HomeComponent, MenuComponent, CreateComponent, DetailsComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideHttpClient(), ServiceDepartamentos, provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}

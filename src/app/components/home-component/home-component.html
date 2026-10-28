@@ -12,6 +12,16 @@
             <td>{{dept.numero}}</td>
             <td>{{dept.nombre}}</td>
             <td>{{dept.localidad}}</td>
+            <td>
+                <a [routerLink]="['/details/'+ 
+                dept.numero + 
+                '/' + dept.nombre + 
+                '/' + dept.localidad]">
+                    <!-- Otra forma de hacerlo es:
+                    <a a [routerLink]="['/details', dept.numero, dept.nombre, dept.localidad]"></a> -->
+                    Details
+                </a>
+            </td>
         </tr>
         }
     </tbody>

@@ -21,7 +21,7 @@ export class ServiceDepartamentos {
         let json = JSON.stringify(departamento);
         let header = new HttpHeaders();
         //Incluimos la key de content-type
-        header = header.set("content-type", "aplication/json");
+        header = header.set("content-type", "application/json");
         let request = "api/departamentos";
         return firstValueFrom(
             this._http.post(this.url + request, json, { headers: header })
