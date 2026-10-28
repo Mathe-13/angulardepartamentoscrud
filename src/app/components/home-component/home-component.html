@@ -13,14 +13,18 @@
             <td>{{dept.nombre}}</td>
             <td>{{dept.localidad}}</td>
             <td>
-                <a [routerLink]="['/details/'+ 
+                <!-- <a [routerLink]="['/details/'+ 
                 dept.numero + 
                 '/' + dept.nombre + 
-                '/' + dept.localidad]">
-                    <!-- Otra forma de hacerlo es:
-                    <a a [routerLink]="['/details', dept.numero, dept.nombre, dept.localidad]"></a> -->
+                '/' + dept.localidad]"></a> -->
+                <!-- Otra forma de hacerlo es: -->
+                <a a [routerLink]="['/details', dept.numero, dept.nombre, dept.localidad,]" class="btn btn-info">
                     Details
                 </a>
+                <a [routerLink]="['/update', dept.numero]" class="btn btn-info">
+                    Edit
+                </a>
+
             </td>
         </tr>
         }
