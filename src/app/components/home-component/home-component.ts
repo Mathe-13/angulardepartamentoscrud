@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
     private _cdr: ChangeDetectorRef) { }
 
   async deleteDepartamento(id: number): Promise<void> {
-    let response = await this._service.deleteDepartmaentoAsync(id);
+    await this._service.deleteDepartamentoAsync(id);
     await this.loadDepartamento();
   }
 
