@@ -1,4 +1,4 @@
-<table class="table table-warnig">
+<table class="table table-warning">
     <thead>
         <tr>
             <th>Numero</th>
@@ -18,7 +18,7 @@
                 '/' + dept.nombre + 
                 '/' + dept.localidad]"></a> -->
                 <!-- Otra forma de hacerlo es: -->
-                <a a [routerLink]="['/details', dept.numero, dept.nombre, dept.localidad,]" class="btn btn-info">
+                <a [routerLink]="['/details', dept.numero, dept.nombre, dept.localidad,]" class="btn btn-info">
                     Details
                 </a>
                 <a [routerLink]="['/update', dept.numero]" class="btn btn-info">
