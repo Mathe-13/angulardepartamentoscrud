@@ -43,7 +43,9 @@ export class ServiceDepartamentos {
     }
 
     async deleteDepartmaentoAsync(id: number): Promise<any> {
-        let request = "api/departamentos/id";
-        return firstValueFrom(this._http.delete(this.url + request));
+        let request = "api/departamentos/" + id;
+        return firstValueFrom(
+          this._http.delete(this.url + request)
+        );
     }
 }
